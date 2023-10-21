@@ -1,11 +1,22 @@
 
 .header {
-    display: flex;
+    position: absolute;
     width: 100vw;
     height: 10vw;
     background-image: url("images/header-background.jpg");
     opacity: 0.5;
+}
+
+.header-text {
+    position: relative;
+    width: 100vw;
+    height: 10vw;
     align-items: center;
+}
+
+.header-text h1 {
+    font-size: 96;
+    font-weight: bold;
 }
 
 .main-bar {
