@@ -1,0 +1,23 @@
+body {
+    display: flex;
+}
+
+.side-bar {
+    background-color: green;
+    width: 20vw;
+    margin-left: 5vw;
+    height: 100vh;
+}
+
+.main-bar {
+    background-color: lightcoral;
+    width: 70vw;
+    margin-right: 5vw;
+    height: 100vh;
+}
+
+.card {
+    width: 25%;
+    aspect-ratio: 1;
+    background-color: blue;
+}
