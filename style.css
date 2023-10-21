@@ -20,4 +20,13 @@ body {
     width: 25%;
     aspect-ratio: 1;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    display: block;
+    max-height: 90%;
+    max-width: 90%;
 }
