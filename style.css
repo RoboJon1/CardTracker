@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .header {
     position: absolute;
     width: 100vw;
@@ -24,6 +27,7 @@
     width: 100vw;
     height: flex;
 }
+
 .side-bar {
     background-color: green;
     width: 20vw;
