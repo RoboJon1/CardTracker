@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: black;
+}
 .header {
     position: absolute;
     width: 100vw;
@@ -29,7 +32,10 @@
 }
 
 .side-bar {
-    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1b;
+    color: white;
     width: 20vw;
     margin-left: 5vw;
     height: 100vh;
@@ -37,7 +43,7 @@
 
 .card-bar {
     display: flex;
-    background-color: lightcoral;
+    background-color: #1b1b1b;
     width: 70vw;
     margin-right: 5vw;
     height: 100vh;
@@ -48,14 +54,14 @@
     position: relative;
     width: 25%;
     aspect-ratio: 5/6.5;
-    background-color: whitesmoke;
+    background-color: #1b1b1b;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card:hover {
-    background-color: gainsboro;
+    background-color: #272627;
 }
 
 .card-image {
