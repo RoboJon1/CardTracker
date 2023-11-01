@@ -42,8 +42,9 @@ body {
 }
 
 .card-bar {
-    display: flex;
+    display: grid;
     background-color: #1b1b1b;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 70vw;
     margin-right: 5vw;
     height: 100vh;
@@ -52,7 +53,6 @@ body {
 
 .card {
     position: relative;
-    width: 25%;
     aspect-ratio: 5/6.5;
     background-color: #1b1b1b;
     display: flex;
