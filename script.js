@@ -5,8 +5,8 @@ var players = ["Shedeur Sanders", "Josh Allen", "Shedeur Sanders", "Shedeur Sand
 function filter(element) {
     var sport = element.id;
     var cards = document.getElementById("card-bar").querySelectorAll("card");  
-    console.log(cards);
     for(let i = 0; i < cards.length; i++) {
+        console.log("hello");
         if(sports[i] == sport) {
             cards[i].style.display = "flex";
         }
