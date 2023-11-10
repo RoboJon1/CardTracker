@@ -37,11 +37,25 @@ function filter(element) {
     playersFilter = [];
 }
 
-/*
+
 function createCheckboxes(div) {
-    document.getElementById("sports")
-    document.getElementById("years")
-    document.getElementById("players")
+    
+    var list;
+
+    if(element.parentElement.parentElement.id == "sports") list = sports;
+    if(element.parentElement.parentElement.id == "years") list = years;
+    if(element.parentElement.parentElement.id == "players") list = players;
+
+    list.forEach(function (element) {
+        var spacerDiv = document.createElement("div");
+
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.name = element;
+        checkbox.id = element;
+        checkbox.onclick = filter(this);
+    })
+
 }
-*/
+
 
