@@ -1,6 +1,6 @@
 var sports = ["Football", "Football", "Football", "Football", "Baseball", "Baseball", "Baseball", "Soccer"];
 var years = ["2023", "2019", "2023", "2023", "2023", "2019", "2019", "2022"];
-var players = ["Shedeur Sanders", "Josh Allen", "Shedeur Sanders", "Shedeur Sanders", "Shedeur Sanders", "Shohei Ohtani", "Shohei Ohtani", "Lionel Messi"];
+var players = ["Shedeur Sanders", "Josh Allen", "Brady Cook", "Bo Nix", "Corbin Carroll", "Shohei Ohtani", "Shohei Ohtani", "Lionel Messi"];
 
 function filter(element) {
     //updates filter arrays to the checked checkboxes
@@ -9,6 +9,7 @@ function filter(element) {
     var yearsFilter = [];
     var playersFilter = [];
 
+    //pushes checked checkboxes to the respective filter
     if(element.parentElement.parentElement.id == "sports") checkboxes.forEach(checkbox => sportsFilter.push(checkbox.id));
     if(element.parentElement.parentElement.id == "years") checkboxes.forEach(checkbox => yearsFilter.push(checkbox.id));
     if(element.parentElement.parentElement.id == "players") checkboxes.forEach(checkbox => playersFilter.push(checkbox.id));
@@ -31,6 +32,7 @@ function filter(element) {
 }
 
 function updateCheckboxes() {
+    //runs createCheckboxes for all filter categories
     createCheckboxes(document.getElementById("sports"), sports);
     createCheckboxes(document.getElementById("years"), years);
     createCheckboxes(document.getElementById("players"), players);
@@ -78,6 +80,7 @@ function createCheckboxes(div, list) {
         
         spacerDiv.appendChild(label);
 
+        //appends this spacerDiv into the main div
         div.appendChild(spacerDiv);
     })
 

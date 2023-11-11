@@ -6,7 +6,7 @@
     <Link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="updateCheckboxes()">
     <div class = "header"></div>      
     <div class = "header-text">
         <h1>VIEW YOUR COLLECTION</h1>
@@ -14,55 +14,9 @@
     <div class = "main-bar">
         <div class = "side-bar">
             <h1>Filters</h1>
-            <div class="filter" id="sports">
-                <h2>Sport</h2>
-                <div>
-                    <input type="checkbox" name="Baseball" id="Baseball" onclick="filter(this)">
-                    <label for="Baseball">Baseball</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Football" id="Football" onclick="filter(this)">
-                    <label for="Football">Football</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Soccer" id="Soccer" onclick="filter(this)">
-                    <label for="Soccer">Soccer</label>
-                </div>
-            </div>
-            <div class="filter" id="years">
-                <h2>Year</h2>
-                <div>
-                    <input type="checkbox" name="2023" id="2023" onclick="filter(this)">
-                    <label for="2023">2023</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="2022" id="2022" onclick="filter(this)">
-                    <label for="2022">2022</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="2019" id="2019" onclick="filter(this)">
-                    <label for="2019">2019</label>
-                </div>
-            </div>
-            <div class="filter" id="players">
-                <h2>Player</h2>
-                <div>
-                    <input type="checkbox" name="Shedeur Sanders" id="Shedeur Sanders" onclick="filter(this)">
-                    <label for="Shedeur Sanders">Shedeur Sanders</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Josh Allen" id="Josh Allen" onclick="filter(this)">
-                    <label for="Josh Allen">Josh Allen</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Shohei Ohtani" id="Shohei Ohtani" onclick="filter(this)">
-                    <label for="Shohei Ohtani">Shohei Ohtani</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Lionel Messi" id="Lionel Messi" onclick="updateCheckboxes()">
-                    <label for="Lionel Messi">Lionel Messi</label>
-                </div>
-            </div>
+            <div class="filter" id="sports"></div>
+            <div class="filter" id="years"></div>
+            <div class="filter" id="players"></div>
         </div>
         <div class = "card-bar" id="card-bar">
             <div class = "card" value = "1">
