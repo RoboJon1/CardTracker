@@ -78,3 +78,20 @@ body {
 .card-front:hover {
     opacity: 0;
 }
+
+.popup-info {
+    visibility: hidden;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Covers half of the screen horizontally */
+    height: 50%; /* Covers half of the screen vertically */
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}

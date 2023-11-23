@@ -2,17 +2,16 @@ var sports = ["Football", "Football", "Football", "Football", "Baseball", "Baseb
 var years = ["2023", "2019", "2023", "2023", "2023", "2019", "2019", "2022"];
 var players = ["Shedeur Sanders", "Josh Allen", "Brady Cook", "Bo Nix", "Corbin Carroll", "Shohei Ohtani", "Shohei Ohtani", "Lionel Messi"];
 
-function filter(element) {
+function filter() {
     //updates filter arrays to the checked checkboxes
-    var checkboxes = element.parentElement.parentElement.querySelectorAll('input[type=checkbox]:checked');
     var sportsFilter = [];
     var yearsFilter = [];
     var playersFilter = [];
 
     //pushes checked checkboxes to the respective filter
-    if(element.parentElement.parentElement.id == "sports") checkboxes.forEach(checkbox => sportsFilter.push(checkbox.id));
-    if(element.parentElement.parentElement.id == "years") checkboxes.forEach(checkbox => yearsFilter.push(checkbox.id));
-    if(element.parentElement.parentElement.id == "players") checkboxes.forEach(checkbox => playersFilter.push(checkbox.id));
+    document.getElementById("sports").querySelectorAll('input[type=checkbox]:checked').forEach(checkbox => sportsFilter.push(checkbox.id));
+    document.getElementById("years").querySelectorAll('input[type=checkbox]:checked').forEach(checkbox => yearsFilter.push(checkbox.id));
+    document.getElementById("players").querySelectorAll('input[type=checkbox]:checked').forEach(checkbox => playersFilter.push(checkbox.id));
 
     var cards = document.getElementById("card-bar").querySelectorAll("div.card"); 
 
@@ -68,7 +67,7 @@ function createCheckboxes(div, list) {
         checkbox.name = element;
         checkbox.id = element;
         checkbox.onclick = function () {
-            filter(this);
+            filter();
         };
 
         spacerDiv.appendChild(checkbox);
@@ -84,6 +83,11 @@ function createCheckboxes(div, list) {
         div.appendChild(spacerDiv);
     })
 
+}
+
+function openInfo(cardID) {
+    var infoElement = document.getElementById(cardID + "Info");
+    infoElement.style.visibility = "visible";
 }
 
 
