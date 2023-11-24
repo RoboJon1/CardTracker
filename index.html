@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>title</title>
     <Link href="style.css" rel="stylesheet" type="text/css"/>
-    <script src="script.js"></script>
+    <script src = "script.js"></script>
 </head>
 <body onload="updateCheckboxes()">
     <div class = "header"></div>      
@@ -17,57 +17,51 @@
             <div class="filter" id="sports"></div>
             <div class="filter" id="years"></div>
             <div class="filter" id="players"></div>
+            <div class="filter" id="sets"></div>
         </div>
         <div class = "card-bar" id="card-bar">
-            <div class = "card" id = "card1" onClick = "openInfo('card1')">
-                <img class = "card-image card-front" src="images/front1.jpg">   
-                <img class = "card-image" src="images/back1.jpg">
-                <div class = "popup-info" id = "card1Info">
-                    <div class = "popup-card-image">
-                        <img class = "card-image card-front" src="images/front1.jpg">   
-                        <img class = "card-image" src="images/back1.jpg">
-                    </div>
-                    <div>
-                        <h1>2023 Bowman University Shedeur Sanders</h1>
-                        <h2>Gold Lava Auto</h2>
-                    </div>
-                    
-                </div>
+            <div class = "card" id = "card1" onClick = "openInfo(1)">
+                <img class = "card-image card-front" src = "images/front1.jpg">   
+                <img class = "card-image" src = "images/back1.jpg">
             </div>
-            <div class = "card" id = "card2" onClick = "openInfo('card2')">
-                <img class = "card-image card-front" src="images/front2.jpg">   
-                <img class = "card-image" src="images/back2.jpg">
-                <div class = "popup-info" id = "card2Info"></div>
+            <div class = "card" id = "card2" onClick = "openInfo(2)">
+                <img class = "card-image card-front" src = "images/front2.jpg">   
+                <img class = "card-image" src = "images/back2.jpg">
             </div>
-            <div class = "card" id = "card3" onClick = "openInfo('card3')">
-                <img class = "card-image card-front" src="images/front3.jpg">   
-                <img class = "card-image" src="images/back3.jpg">
-                <div class = "popup-info" id = "card3Info"></div>
+            <div class = "card" id = "card3" onClick = "openInfo(3)">
+                <img class = "card-image card-front" src = "images/front3.jpg">   
+                <img class = "card-image" src = "images/back3.jpg">
             </div>
-            <div class = "card" id = "card4" onClick = "openInfo('card4')">
-                <img class = "card-image card-front" src="images/front4.jpg">   
-                <img class = "card-image" src="images/back4.jpg">
-                <div class = "popup-info" id = "card4Info"></div>
+            <div class = "card" id = "card4" onClick = "openInfo(4)">
+                <img class = "card-image card-front" src = "images/front4.jpg">   
+                <img class = "card-image" src = "images/back4.jpg">
             </div>
-            <div class = "card" id = "card5" onClick = "openInfo('card5')">
-                <img class = "card-image card-front" src="images/front5.jpg">   
-                <img class = "card-image" src="images/back5.jpg">
-                <div class = "popup-info" id = "card5Info"></div>
+            <div class = "card" id = "card5" onClick = "openInfo(5)">
+                <img class = "card-image card-front" src = "images/front5.jpg">   
+                <img class = "card-image" src = "images/back5.jpg">
             </div>
-            <div class = "card" id = "card6" onClick = "openInfo('card6')">
-                <img class = "card-image card-front" src="images/front6.jpg">   
-                <img class = "card-image" src="images/back6.jpg">
-                <div class = "popup-info" id = "card6Info"></div>
+            <div class = "card" id = "card6" onClick = "openInfo(6)">
+                <img class = "card-image card-front" src = "images/front6.jpg">   
+                <img class = "card-image" src = "images/back6.jpg">
             </div>
-            <div class = "card" id = "card7" onClick = "openInfo('card7')">
-                <img class = "card-image card-front" src="images/front7.jpg">   
-                <img class = "card-image" src="images/back7.jpg">
-                <div class = "popup-info" id = "card7Info"></div>
+            <div class = "card" id = "card7" onClick = "openInfo(7)">
+                <img class = "card-image card-front" src = "images/front7.jpg">   
+                <img class = "card-image" src = "images/back7.jpg">
             </div>
-            <div class = "card" id = "card8" onClick = "openInfo('card8')">
-                <img class = "card-image card-front" src="images/front8.jpg">   
-                <img class = "card-image" src="images/back8.jpg">
-                <div class = "popup-info" id = "card8Info"></div>
+            <div class = "card" id = "card8" onClick = "openInfo(8)">
+                <img class = "card-image card-front" src = "images/front8.jpg">   
+                <img class = "card-image" src = "images/back8.jpg">
+            </div>
+        </div>
+        <div class = "popup-info" id = "cardInfo">
+            <div class = "popup-card-image">
+                <img class = "card-image card-front" id = "popup-card-image-front">   
+                <img class = "card-image" id = "popup-card-image-back">
+            </div>
+            <div>
+                <h1 id = "popup-set-title"></h1>
+                <h2 id = "popup-player"></h2>
+                <div class="popup-exit-button" onClick = "closeInfo()">X</div>
             </div>
         </div>
     </div>

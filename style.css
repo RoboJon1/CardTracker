@@ -87,11 +87,26 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%; /* Covers half of the screen horizontally */
-    height: 50%; /* Covers half of the screen vertically */
+    width: 70%; /* Covers half of the screen horizontally */
+    height: 70%; /* Covers half of the screen vertically */
     background-color: #f2f2f2;
     padding: 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     z-index: 9999;
+}
+
+.popup-exit-button {
+    position: fixed;
+    top: 2.5%; /* Adjust the top position in pixels */
+    right: 1.5%; /* Adjust the right position in pixels */
+    width: 4%; /* Adjust the width to the desired size in pixels */
+    aspect-ratio: 1/1;
+    background-color: red;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
 }
